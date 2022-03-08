@@ -75,7 +75,7 @@
 			apply(X = arr[,,i], MARGIN = 2, FUN = lines, col = "#000000AA")
 			segments(x0 = 0, x1 = 100, y0 = 0.5, y1 = 0.5, col = "#000000AA", lty = 2)
 			# polygon(x = c(0.1, 0.1, 5, 26), y = c(0.9, 0.97, 0.97, 0.9), col = "#FFFFFFAA", border = "#FFFFFFAA") # Can change to make opaqque background
-			text(x = 0, y = 0.95, labels = paste0("N = ", sprintf(fmt = "%0.0f", x = popSize_seq[i])), col = "red", pos = 4)
+			text(x = 0, y = 0.95, labels = paste0("Pop. size = ", sprintf(fmt = "%0.0f", x = popSize_seq[i])), col = "red", pos = 4)
 	
 			par(new = T, fig = c(0.8, 1, 0, 1), mar = c(4.5, 0, 0.5, 0.3))
 			hist_out <- hist(x = arr[n_generations, , i], breaks = seq(from = 0, to = 1, by = 0.05), plot = F)
